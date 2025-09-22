@@ -1,19 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  
-  <title>Practice 3</title>
+    <style>
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
 
-</body>
+body {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  background-color: #f4d595;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: #fff;
+  width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 6px 6px 0px #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  display: block;
+  width: calc(100% - 32px);
+  margin: 16px;
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.tag {
+  display: inline-block;
+  background: #eee;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.date {
+  font-size: 12px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e3b23c;
+  margin: 8px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid #eee;
+  padding: 12px 16px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.title,
+.tag,
+.author,
+.highlight {
+  font-weight: 800; /* ExtraBold */
+}
+    </style>
+    <title>Practice 3</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <img
+        src="assets/images/Blog Image.png"
+        alt="Blog Image"
+        class="card-image"
+      />
+
+      <div class="card-body">
+        <span class="tag">HTML & CSS</span>
+        <p class="date">Публікація 11 Вересня 2025</p>
+        <h2 class="title">Практична №3</h2>
+        <p class="description">
+          Мета практичної роботи полягає в тому, щоб налаштувати середовище
+          розробки
+          <span class="highlight">VS Code</span>, а також
+          реалізувати картку блогу для вдосконалення фундаментальних навичок з
+          <span class="highlight">HTML</span> та
+          <span class="highlight">CSS</span>.
+        </p>
+      </div>
+
+      <div class="card-footer">
+        <img src="assets/images/avatar_male.png" alt="Avatar" class="avatar" />
+        <p class="author">Тепляков Олександр Дмитрович</p>
+      </div>
+    </div>
+  </body>
 </html>
